@@ -1,0 +1,7 @@
+C:\Users\fizik\source\repos\EPAMAutoLab2\bin\Debug\EPAMAutoLab2.exe.config
+C:\Users\fizik\source\repos\EPAMAutoLab2\bin\Debug\EPAMAutoLab2.exe
+C:\Users\fizik\source\repos\EPAMAutoLab2\bin\Debug\EPAMAutoLab2.pdb
+C:\Users\fizik\source\repos\EPAMAutoLab2\obj\Debug\EPAMAutoLab2.csprojAssemblyReference.cache
+C:\Users\fizik\source\repos\EPAMAutoLab2\obj\Debug\EPAMAutoLab2.csproj.CoreCompileInputs.cache
+C:\Users\fizik\source\repos\EPAMAutoLab2\obj\Debug\EPAMAutoLab2.exe
+C:\Users\fizik\source\repos\EPAMAutoLab2\obj\Debug\EPAMAutoLab2.pdb
