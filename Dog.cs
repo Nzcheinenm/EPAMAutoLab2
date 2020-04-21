@@ -9,6 +9,7 @@ namespace EPAMAutoLab2
     class Dog : AnimalInter
     {
         int count = 0;
+        public int lives = 1;
         public Dog(int count)
         {
             this.count = count;

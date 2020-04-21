@@ -8,6 +8,7 @@ namespace EPAMAutoLab2
 {
     class Cat : AnimalInter
     {
+        public int lives = 9;
         public int countFoot()
         {
             return 4;
