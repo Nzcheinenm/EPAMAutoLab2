@@ -63,7 +63,8 @@ namespace EPAMAutoLab2
             }
             catch (Exception e)
             {
-                log.Debug("Вылетело исключение. Следуйте правилам на экране");
+                log.Debug("Вылетело исключение. Следуйте правилам на экране" + e);
+                Console.WriteLine("Ввели неверное число");
             }
         }
     }
