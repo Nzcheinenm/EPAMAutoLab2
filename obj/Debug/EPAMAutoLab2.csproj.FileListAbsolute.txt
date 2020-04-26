@@ -5,3 +5,7 @@ C:\Users\fizik\source\repos\EPAMAutoLab2\obj\Debug\EPAMAutoLab2.csprojAssemblyRe
 C:\Users\fizik\source\repos\EPAMAutoLab2\obj\Debug\EPAMAutoLab2.csproj.CoreCompileInputs.cache
 C:\Users\fizik\source\repos\EPAMAutoLab2\obj\Debug\EPAMAutoLab2.exe
 C:\Users\fizik\source\repos\EPAMAutoLab2\obj\Debug\EPAMAutoLab2.pdb
+C:\Users\fizik\source\repos\EPAMAutoLab2\bin\Debug\NLog.config
+C:\Users\fizik\source\repos\EPAMAutoLab2\bin\Debug\NLog.dll
+C:\Users\fizik\source\repos\EPAMAutoLab2\bin\Debug\NLog.xml
+C:\Users\fizik\source\repos\EPAMAutoLab2\obj\Debug\EPAMAutoLab2.csproj.CopyComplete

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,27 +8,41 @@ using System.Threading.Tasks;
 
 namespace EPAMAutoLab2
 {
+
     class Program
     {
+        [My(Name = "Rex")]
+        private static Logger log = LogManager.GetCurrentClassLogger();
         static void Main(string[] args)
         {
+            
             Cat cat = new Cat();
             Dog dog = new Dog(4);
-            Cat catWoman = new Cat();
 
-            catWoman.lives = 5;
+            Console.WriteLine(dog.Name);
+            Cat catWoman = new Cat
+            {
+                lives = 5
+            };
+            log.Debug("Обьекты созданы");
 
             Console.WriteLine(cat.countFoot());
             Console.WriteLine(cat.Say());
+            log.Debug("Обьект Кот выведен в консоль");
 
+            Console.WriteLine();
+            dog.DogName();
+            Console.WriteLine(dog.Name);
             Console.WriteLine(dog.Say());
             Console.WriteLine(dog.countFoot());
+            log.Debug("Обьект Собака выведен в консоль");
 
-            List<object> list = new List<object>();
-
-            list.Add(cat.lives);
-            list.Add(dog.lives);
-            list.Add(catWoman.lives);
+            List<object> list = new List<object>
+            {
+                cat.lives,
+                dog.lives,
+                catWoman.lives
+            };
 
             list.Sort();
 
@@ -36,9 +51,20 @@ namespace EPAMAutoLab2
                 Console.Write(x + " ");
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Введите любой символ, что бы завершить");
-            String a = Console.ReadLine();
+            try
+            {
+                Console.WriteLine();
+                Console.WriteLine("Введите число больше 2, что бы завершить");
+                int a = Int32.Parse(Console.ReadLine());
+                if (a <= 2)
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception e)
+            {
+                log.Debug("Вылетело исключение. Следуйте правилам на экране");
+            }
         }
     }
 }
